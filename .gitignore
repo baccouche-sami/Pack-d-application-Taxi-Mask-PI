@@ -1,0 +1,61 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/taxi-mask-backend/src/main/**/target/
+!**/taxi-mask-backend/src/test/**/target/
+
+### Properties ###
+taxi-mask-backend/src/main/resources/application-dev.properties
+taxi-mask-backend/src/main/resources/application-prod.properties
+taxi-mask-backend/src/main/resources/application-test.properties
+taxi-mask-backend/upload/*
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### build android ###
+taxi-mask-android/build/
+taxi-mask-android/.gradle
+taxi-mask-android/local.properties
+
+.DS_Store
+taxi-mask-frontend/node_modules
+taxi-mask-frontend/dist
+taxi-mask-frontend/package-lock.json
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+/.metadata/

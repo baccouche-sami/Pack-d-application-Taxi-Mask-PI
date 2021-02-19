@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+    tools:context=".Commande2Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/timg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Caractéristique  de véhicule"
+            android:layout_marginTop="24dp"
+            android:textColor="#ADCCE2"
+            android:textSize="28dp"
+            android:paddingBottom="16dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="0dp"
+                android:layout_marginRight="35dp"
+                android:textColor="#ADCCE2"
+                android:text="Trappe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_character" />
+            <RadioGroup
+                android:id="@+id/radioGroup_diffLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginRight="35dp"
+                android:orientation="horizontal"
+                android:textColor="#ADCCE2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <RadioButton
+                    android:id="@+id/radioButton_easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Avec" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Sans" />
+
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="0dp"
+                android:layout_marginRight="35dp"
+                android:textColor="#ADCCE2"
+                android:text="Type de Protection"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_typeprotection" />
+            <RadioGroup
+                android:id="@+id/radioGroup_typeprotection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginRight="35dp"
+                android:orientation="horizontal"
+                android:textColor="#ADCCE2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <RadioButton
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Partielle ($180)" />
+
+                <RadioButton
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Totale ($360)" />
+
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <EditText
+                android:textSize="16dp"
+                android:id="@+id/maque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marque"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+               android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <EditText
+                android:textSize="16dp"
+                android:id="@+id/modele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Modele"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <EditText
+                android:textSize="16dp"
+                android:id="@+id/imma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Immatriculation"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <EditText
+                android:textSize="16dp"
+                android:id="@+id/dateimma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date de 1ére Immatriculation"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="date"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="0dp"
+                android:layout_marginRight="35dp"
+                android:textColor="#ADCCE2"
+                android:text="Toit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_toit" />
+            <RadioGroup
+                android:id="@+id/radioGroup_toit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginRight="35dp"
+                android:orientation="horizontal"
+                android:textColor="#ADCCE2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <RadioButton
+                    android:id="@+id/to1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Sans" />
+                <RadioButton
+                    android:id="@+id/to2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Ouvrant" />
+
+                <RadioButton
+                    android:id="@+id/to3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Panoramique" />
+
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="0dp"
+                android:layout_marginRight="35dp"
+                android:textColor="#ADCCE2"
+                android:text="Etiquette"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_etiquette" />
+            <RadioGroup
+                android:id="@+id/radioGroup_etiquette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginRight="35dp"
+                android:orientation="horizontal"
+                android:textColor="#ADCCE2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <RadioButton
+                    android:id="@+id/et1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="Sans ($0)" />
+                <RadioButton
+                    android:id="@+id/et2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="M ($12)" />
+
+                <RadioButton
+                    android:id="@+id/et3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="#ADCCE2"
+                    android:text="XL ($12)" />
+
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:textSize="16dp"
+                android:id="@+id/pcg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Photo de carte grise"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <EditText
+            android:textSize="16dp"
+            android:id="@+id/pv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Photo de voiture"
+            android:textColorHint="#ADCCE2"
+            android:textColor="#ADCCE2"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="#0000"
+            android:padding="16dp"
+            android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <TextView
+                android:id="@+id/valide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/angle"
+                android:text="Valider Commande"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="32dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

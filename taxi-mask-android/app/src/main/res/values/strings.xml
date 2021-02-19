@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MumenProject</string>
+    <string-array name="pays_array">
+        <item>France</item>
+        <item>Italie</item>
+        <item>Suisse</item>
+        <item>Tunisie</item>
+        <item>Danmark</item>
+    </string-array>
+</resources>
